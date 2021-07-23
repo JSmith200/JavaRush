@@ -1,0 +1,28 @@
+package com.javarush.task.jdk13.task04.task0410;
+
+/* 
+Интервал
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        checkInterval(60);
+        checkInterval(112);
+        checkInterval(10);
+    }
+
+    public static void checkInterval(int a) {
+        String in = "Число " + a + " содержится в интервале.";
+        String out = "Число " + a + " не содержится в интервале.";
+
+        if (a > 50) {
+            if (a < 100) {
+                System.out.println(in);
+            } else {
+                System.out.println(out);
+            }
+        } else {
+            System.out.println(out);
+        }
+    }
+}
