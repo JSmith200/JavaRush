@@ -1,0 +1,21 @@
+package com.javarush.task.jdk13.task04.task0434;
+
+/* 
+Таблица умножения
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 1;
+        while (a<=100 && b<=10) {
+            System.out.print(a + " ");
+            a=a+b;
+            while (a/10 == b) {
+                System.out.println(a);
+                a = a/10 + 1;
+                b++;
+            }
+        }
+    }
+}
